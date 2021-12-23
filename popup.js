@@ -1,15 +1,5 @@
-var mins = 60;
+import Timer from "./Timer.js";
 
-var x = setInterval(function () {
-    var duration = 1000 * 60 * mins;
-
-    var minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((duration % (1000 * 60)) / 1000);
-
-    document.getElementById("demo").innerHTML = minutes + ":" + seconds;
-
-    if (duration < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "Time's Up!";
-    }
-}, 1000); 
+new Timer(
+    document.querySelector(".timer") // passing in the class of timer
+);
