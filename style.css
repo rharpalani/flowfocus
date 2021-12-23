@@ -29,3 +29,13 @@ body {
 .timer__btn--stop {
     background: #ff0256
 }
+.header {
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+.header h3 {
+    font-size: 40px;
+}
+.header span {
+    size: 1000px;
+}
